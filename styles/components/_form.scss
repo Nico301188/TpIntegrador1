@@ -1,0 +1,35 @@
+.form-checkbox {
+    align-items: center;
+    justify-content: start;
+    display: flex;
+}
+
+.input-msg-error {
+    display: none;
+    color: rgb(182, 17, 17)
+}
+
+.label-required::after {
+    content: "(*)";
+    color: rgb(182, 17, 17);
+    margin-left: 0.5rem;
+}
+
+.form-control[aria-invalid="true"] {
+    outline: 2px solid rgb(182, 17, 17);
+}
+
+form{
+    display: grid;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+}
+
+button{
+    background-color: $button-b-color;
+    color: $button-t-color;
+    border: 0;
+    margin:1rem;
+    border-radius: 0.5rem;
+}

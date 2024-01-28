@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Contactanos</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="d-bar">
+            <div class="d-logo">
+                <a class="a-logo" href="/index.html"><img src="/img/logocolor.png" alt=""></a>
+            </div>
+            <div class="d-list">
+                <ul>
+                    <li>
+                        <a aria-current="page" href="/styles/pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="/styles/pages/alta.html">Alta de productos</a>
+                    </li>
+                    <li>
+                        <a href="/styles/pages/contacto.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-search">
+                <form class="search">
+                    <input type="search" placeholder="Search" aria-label="Search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div>
+                <h2>Cargue el formulario para contactarnos</h2>
+            </div>
+        </div>
+        <div class="container">
+            <form id="uploadForm" onsubmit="onSubmitContact(event)">
+                <div>
+                    <label for="name" class="form-label label-required">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                    <p id="nameError" class="input-msg-error"></p>
+                </div>
+                <div>
+                    <label for="email" class="form-label label-required">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <p id="emailError" class="input-msg-error"></p>
+                </div>
+                <div>
+                    <label for="tel" class="form-label label-required">Telefono</label>
+                    <input type="number" class="form-control" id="tel" name="tel" required>
+                    <p id="telError" class="input-msg-error"></p>
+                </div>
+                <div>
+                    <label for="comment" class="form-label">Comentarios adicionales</label>
+                    <textarea type="text" class="form-control" id="comment" name="comment"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Buenos Aires - Argentina</p>
+        <p>Juguetería Cosmica - 2024</p>
+    </footer>
+    <script src="/js/validations.js"></script>
+    <script src="/js/contact.js"></script>
+</body>
+
+</html>

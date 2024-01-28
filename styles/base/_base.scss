@@ -1,0 +1,147 @@
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    // margin-top: 5rem;
+}
+
+
+input,
+textarea {
+    height: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 1.5rem;
+    border: 1px solid black;
+    padding: 0.25rem;
+    margin: 0.5rem 0;
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    height: 5rem;
+}
+
+input[type="checkbox"] {
+    width: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    background-color: $secundary-color;
+    border-bottom: 1px solid black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    // align-items: stretch;
+
+    @media screen and (max-width: 740px) {
+        display: block;
+    }
+
+    .d-logo {
+        display: flex;
+        justify-content: stretch;
+        width: 33.3%;
+
+        .a-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            // width: 20rem;
+            display: flex;
+            width: 90%;
+            align-items: center;
+            justify-content: center;
+
+            // padding-left: 1rem;
+            @media screen and (max-width: 740px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .d-list {
+        display: flex;
+        width: 33.3%;
+        justify-content: space-around;
+
+        @media screen and (max-width: 740px) {
+            width: 33.3%;
+        }
+
+        ul {
+            display: flex;
+            // justify-content: space-between;
+            padding: 0;
+
+            @media screen and (max-width: 740px) {
+                display: block;
+            }
+
+            li {
+                display: flex;
+                list-style: none;
+                padding: 0 0.5rem;
+                align-content: center;
+            }
+
+            a {
+                // justify-content: space-between;
+                color: $primary-color;
+                text-decoration: none;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                width: 100%;
+            }
+        }
+    }
+
+    .d-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 2rem;
+        width: 33.3%;
+
+        .search {
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            @media screen and (max-width: 740px) {
+                display: block;
+            }
+
+            input {
+                margin: 0 1rem;
+            }
+        }
+
+    }
+
+    .d-bar {
+        display: flex;
+        width: 100%;
+    }
+}
+
+footer {
+    min-height: 2.5rem;
+    background-color: $secundary-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}

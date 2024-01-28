@@ -1,0 +1,66 @@
+.container {
+    // display: block;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    flex-wrap: wrap;
+
+    form {
+        // text-align: center;
+        align-content: center;
+    }
+}
+
+.banner {
+    padding-top: 7rem;
+
+    img {
+        width: 97%;
+        // padding: 1rem;
+        margin: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        display: flex;
+    }
+}
+
+.sbanner {
+    padding-bottom: 0;
+}
+
+.banner-us {
+    background-image: url(../../img/nosotros.webp);
+    background-size: cover;
+    // padding-top: 15rem;
+    height: 85vh;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    .tittle-us {
+        // h2{
+            // background-color: $secundary-color-s;
+        // }
+        color: $button-b-color;
+        font-size: $font-size-xxl;
+    }
+
+    .text-us {
+        color: $button-b-color;
+        font-size: $font-size-md;
+    }
+}
+
+section {
+    width: 100%;
+    justify-content: space-between;
+    // padding-top: 4rem;
+    padding-bottom: 8rem;
+
+    h2 {
+        padding-top: 6rem;
+    }
+}

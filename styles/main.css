@@ -1,0 +1,271 @@
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+input,
+textarea {
+  height: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  border: 1px solid black;
+  padding: 0.25rem;
+  margin: 0.5rem 0;
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  height: 5rem;
+}
+
+input[type=checkbox] {
+  width: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  background-color: rgb(74, 159, 185);
+  border-bottom: 1px solid black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 740px) {
+  .navbar {
+    display: block;
+  }
+}
+.navbar .d-logo {
+  display: flex;
+  justify-content: stretch;
+  width: 33.3%;
+}
+.navbar .d-logo .a-logo {
+  display: flex;
+  align-items: center;
+}
+.navbar .d-logo img {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 740px) {
+  .navbar .d-logo img {
+    width: 100%;
+  }
+}
+.navbar .d-list {
+  display: flex;
+  width: 33.3%;
+  justify-content: space-around;
+}
+@media screen and (max-width: 740px) {
+  .navbar .d-list {
+    width: 33.3%;
+  }
+}
+.navbar .d-list ul {
+  display: flex;
+  padding: 0;
+}
+@media screen and (max-width: 740px) {
+  .navbar .d-list ul {
+    display: block;
+  }
+}
+.navbar .d-list ul li {
+  display: flex;
+  list-style: none;
+  padding: 0 0.5rem;
+  align-content: center;
+}
+.navbar .d-list ul a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.navbar .d-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+  width: 33.3%;
+}
+.navbar .d-search .search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 740px) {
+  .navbar .d-search .search {
+    display: block;
+  }
+}
+.navbar .d-search .search input {
+  margin: 0 1rem;
+}
+.navbar .d-bar {
+  display: flex;
+  width: 100%;
+}
+
+footer {
+  min-height: 2.5rem;
+  background-color: rgb(74, 159, 185);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.card {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #070707;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+}
+@media screen and (max-width: 533px) {
+  .card {
+    display: block;
+  }
+}
+
+.card img {
+  border: 1px solid rgb(74, 159, 185);
+  max-width: 100%;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card-body {
+  width: 100%;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card-body a {
+  text-decoration: none;
+}
+
+.price {
+  color: rgb(250, 2, 2);
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  flex-wrap: wrap;
+}
+.container form {
+  align-content: center;
+}
+
+.banner {
+  padding-top: 7rem;
+}
+.banner img {
+  width: 97%;
+  margin: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+}
+
+.sbanner {
+  padding-bottom: 0;
+}
+
+.banner-us {
+  background-image: url(../../img/nosotros.webp);
+  background-size: cover;
+  height: 85vh;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.banner-us .tittle-us {
+  color: #004173;
+  font-size: 4rem;
+}
+.banner-us .text-us {
+  color: #004173;
+  font-size: 1.5rem;
+}
+
+section {
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 8rem;
+}
+section h2 {
+  padding-top: 6rem;
+}
+
+.form-checkbox {
+  align-items: center;
+  justify-content: start;
+  display: flex;
+}
+
+.input-msg-error {
+  display: none;
+  color: rgb(182, 17, 17);
+}
+
+.label-required::after {
+  content: "(*)";
+  color: rgb(182, 17, 17);
+  margin-left: 0.5rem;
+}
+
+.form-control[aria-invalid=true] {
+  outline: 2px solid rgb(182, 17, 17);
+}
+
+form {
+  display: grid;
+  width: 50%;
+  align-content: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #004173;
+  color: #FBC800;
+  border: 0;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=main.css.map */

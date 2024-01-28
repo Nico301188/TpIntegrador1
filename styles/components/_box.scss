@@ -1,0 +1,43 @@
+.card {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #070707;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    @media screen and (max-width: 533px){
+        display: block;
+    }
+}
+
+.card img {
+    border: 1px solid $secundary-color;
+    max-width: 100%;
+    margin-bottom: 8px;
+
+}
+
+.card-title {
+    font-size: $font-size-md;
+    align-items: center;
+}
+
+.card-text {
+    font-size: $font-size-ss;
+}
+
+.card-body {
+    width: 100%;
+    display:grid;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+    }
+}
+.price{
+    color: $price-color;
+}
